@@ -33,7 +33,8 @@ namespace ConsoleApp
             Console.WriteLine($"Mark: {submitPaper.SPaper.Mark}");
             Console.WriteLine($"NoOfQuestion: {submitPaper.SPaper.NoOfQuestion}");
 
-            Console.WriteLine($"ReadingQuestions: {submitPaper.SPaper.ReadingQuestions.Cast<object>()}");
+            //Console.WriteLine($"ReadingQuestions: {submitPaper.SPaper.ReadingQuestions.Cast<object>()}");
+            Console.WriteLine($"ReadingQuestions: {string.Join(", ", submitPaper.SPaper.ReadingQuestions.Cast<object>())}");
             Console.WriteLine($"GrammarQuestions: {string.Join(", ", submitPaper.SPaper.GrammarQuestions.Cast<object>())}");
             Console.WriteLine($"MatchQuestions: {string.Join(", ", submitPaper.SPaper.MatchQuestions.Cast<object>())}");
             Console.WriteLine($"IndicateMQuestions: {string.Join(", ", submitPaper.SPaper.IndicateMQuestions.Cast<object>())}");
@@ -53,6 +54,5 @@ namespace ConsoleApp
             //Console.WriteLine($"OneSecSilence: {BitConverter.ToString(submitPaper.SPaper.OneSecSilence)}");
             Console.WriteLine($"AudioHeadPadding: {submitPaper.SPaper.AudioHeadPadding}");
         }
-
     }
 }

@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+	<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,9 +20,6 @@
     </Reference>
     <Reference Include="NAudio">
       <HintPath>dll\NAudio.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>dll\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="QuestionLib">
       <HintPath>dll\QuestionLib.dll</HintPath>
